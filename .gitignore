@@ -25,3 +25,4 @@ extracted/
 
 # Misc
 *.log
+.ci-check/

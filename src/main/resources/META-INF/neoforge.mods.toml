@@ -1,27 +1,27 @@
 modLoader="javafml"
-loaderVersion="${loader_version_range}"
-license="${mod_license}"
+loaderVersion="[1,)"
+license="All Rights Reserved"
 
 [[mods]]
-modId="${mod_id}"
-version="${mod_version}"
-displayName="${mod_name}"
-authors="${mod_authors}"
+modId="sausage_craft"
+version="1.0.0"
+displayName="Sausage Craft"
+authors="sasusage"
 description='''
 Сосиски в тесте: вкусная еда и украшение для стола.
 Sausages in dough: tasty food and a cozy table decoration.
 '''
 
-[[dependencies.${mod_id}]]
+[[dependencies.sausage_craft]]
     modId="neoforge"
     type="required"
-    versionRange="[${neo_version},)"
+    versionRange="[21.1.0,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.sausage_craft]]
     modId="minecraft"
     type="required"
-    versionRange="${minecraft_version_range}"
+    versionRange="[1.21.1]"
     ordering="NONE"
     side="BOTH"
