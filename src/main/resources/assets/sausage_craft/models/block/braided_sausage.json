@@ -1,0 +1,1310 @@
+{
+ "credit": "Classic sausage in dough (caterpillar) - sausage_craft",
+ "ambientocclusion": false,
+ "textures": {
+  "particle": "#dough",
+  "dough": "sausage_craft:block/pastry_dough",
+  "sausage": "sausage_craft:block/sausage"
+ },
+ "elements": [
+  {
+   "name": "sausage_shaft_tall",
+   "from": [
+    7.3,
+    1.2,
+    0.7
+   ],
+   "to": [
+    8.7,
+    3.6,
+    15.3
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      7.3,
+      6.8,
+      8.7,
+      9.2
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      0.7,
+      6.8,
+      15.3,
+      9.2
+     ],
+     "texture": "#sausage"
+    },
+    "south": {
+     "uv": [
+      7.3,
+      6.8,
+      8.7,
+      9.2
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      0.7,
+      6.8,
+      15.3,
+      9.2
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      7.3,
+      0.7,
+      8.7,
+      15.3
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      7.3,
+      0.7,
+      8.7,
+      15.3
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "sausage_shaft_mid",
+   "from": [
+    7.0,
+    1.35,
+    0.7
+   ],
+   "to": [
+    9.0,
+    3.45,
+    15.3
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      7.0,
+      7.0,
+      9.0,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      0.7,
+      7.0,
+      15.3,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "south": {
+     "uv": [
+      7.0,
+      7.0,
+      9.0,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      0.7,
+      7.0,
+      15.3,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      7.0,
+      0.7,
+      9.0,
+      15.3
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      7.0,
+      0.7,
+      9.0,
+      15.3
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "sausage_shaft_wide",
+   "from": [
+    6.8,
+    1.6,
+    0.7
+   ],
+   "to": [
+    9.2,
+    3.2,
+    15.3
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      6.8,
+      7.2,
+      9.2,
+      8.8
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      0.7,
+      7.2,
+      15.3,
+      8.8
+     ],
+     "texture": "#sausage"
+    },
+    "south": {
+     "uv": [
+      6.8,
+      7.2,
+      9.2,
+      8.8
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      0.7,
+      7.2,
+      15.3,
+      8.8
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      6.8,
+      0.7,
+      9.2,
+      15.3
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      6.8,
+      0.7,
+      9.2,
+      15.3
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "sausage_front_taper",
+   "from": [
+    7.0,
+    1.45,
+    0.3
+   ],
+   "to": [
+    9.0,
+    3.35,
+    0.7
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      7.0,
+      7.0,
+      9.0,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      0.3,
+      7.0,
+      0.7,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      0.3,
+      7.0,
+      0.7,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      7.0,
+      0.3,
+      9.0,
+      0.7
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      7.0,
+      0.3,
+      9.0,
+      0.7
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "sausage_front_dome",
+   "from": [
+    7.3,
+    1.75,
+    0.0
+   ],
+   "to": [
+    8.7,
+    3.05,
+    0.3
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      7.3,
+      7.3,
+      8.7,
+      8.7
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      0.0,
+      7.3,
+      0.3,
+      8.7
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      0.0,
+      7.3,
+      0.3,
+      8.7
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      7.3,
+      0.0,
+      8.7,
+      0.3
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      7.3,
+      0.0,
+      8.7,
+      0.3
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "sausage_back_taper",
+   "from": [
+    7.0,
+    1.45,
+    15.3
+   ],
+   "to": [
+    9.0,
+    3.35,
+    15.7
+   ],
+   "shade": false,
+   "faces": {
+    "south": {
+     "uv": [
+      7.0,
+      7.0,
+      9.0,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      15.3,
+      7.0,
+      15.7,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      15.3,
+      7.0,
+      15.7,
+      9.0
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      7.0,
+      15.3,
+      9.0,
+      15.7
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      7.0,
+      15.3,
+      9.0,
+      15.7
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "sausage_back_dome",
+   "from": [
+    7.3,
+    1.75,
+    15.7
+   ],
+   "to": [
+    8.7,
+    3.05,
+    16.0
+   ],
+   "shade": false,
+   "faces": {
+    "south": {
+     "uv": [
+      7.3,
+      7.3,
+      8.7,
+      8.7
+     ],
+     "texture": "#sausage"
+    },
+    "east": {
+     "uv": [
+      15.7,
+      7.3,
+      16.0,
+      8.7
+     ],
+     "texture": "#sausage"
+    },
+    "west": {
+     "uv": [
+      15.7,
+      7.3,
+      16.0,
+      8.7
+     ],
+     "texture": "#sausage"
+    },
+    "up": {
+     "uv": [
+      7.3,
+      15.7,
+      8.7,
+      16.0
+     ],
+     "texture": "#sausage"
+    },
+    "down": {
+     "uv": [
+      7.3,
+      15.7,
+      8.7,
+      16.0
+     ],
+     "texture": "#sausage"
+    }
+   }
+  },
+  {
+   "name": "ring_1_body",
+   "from": [
+    5.2,
+    0.0,
+    2.0
+   ],
+   "to": [
+    10.8,
+    4.4,
+    5.0
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      5.2,
+      11.6,
+      10.8,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      2.0,
+      11.6,
+      5.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      2.0,
+      11.6,
+      5.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      5.2,
+      2.0,
+      10.8,
+      5.0
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      5.2,
+      2.0,
+      10.8,
+      5.0
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_1_top_puff",
+   "from": [
+    5.8,
+    4.4,
+    2.2
+   ],
+   "to": [
+    10.2,
+    5.2,
+    4.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      5.8,
+      10.8,
+      10.2,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      2.2,
+      10.8,
+      4.8,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      5.8,
+      10.8,
+      10.2,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      2.2,
+      10.8,
+      4.8,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      5.8,
+      2.2,
+      10.2,
+      4.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_1_side_bulge",
+   "from": [
+    4.6,
+    0.8,
+    2.2
+   ],
+   "to": [
+    11.4,
+    3.6,
+    4.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      4.6,
+      12.4,
+      11.4,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      2.2,
+      12.4,
+      4.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      4.6,
+      12.4,
+      11.4,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      2.2,
+      12.4,
+      4.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      4.6,
+      2.2,
+      11.4,
+      4.8
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      4.6,
+      2.2,
+      11.4,
+      4.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_2_body",
+   "from": [
+    4.8,
+    0.0,
+    5.0
+   ],
+   "to": [
+    11.2,
+    4.7,
+    8.0
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      4.8,
+      11.3,
+      11.2,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      5.0,
+      11.3,
+      8.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      5.0,
+      11.3,
+      8.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      4.8,
+      5.0,
+      11.2,
+      8.0
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      4.8,
+      5.0,
+      11.2,
+      8.0
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_2_top_puff",
+   "from": [
+    5.5,
+    4.7,
+    5.2
+   ],
+   "to": [
+    10.5,
+    5.6,
+    7.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      5.5,
+      10.4,
+      10.5,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      5.2,
+      10.4,
+      7.8,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      5.5,
+      10.4,
+      10.5,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      5.2,
+      10.4,
+      7.8,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      5.5,
+      5.2,
+      10.5,
+      7.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_2_side_bulge",
+   "from": [
+    4.3,
+    0.8,
+    5.2
+   ],
+   "to": [
+    11.7,
+    3.9,
+    7.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      4.3,
+      12.1,
+      11.7,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      5.2,
+      12.1,
+      7.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      4.3,
+      12.1,
+      11.7,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      5.2,
+      12.1,
+      7.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      4.3,
+      5.2,
+      11.7,
+      7.8
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      4.3,
+      5.2,
+      11.7,
+      7.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_3_body",
+   "from": [
+    4.8,
+    0.0,
+    8.0
+   ],
+   "to": [
+    11.2,
+    4.7,
+    11.0
+   ],
+   "shade": false,
+   "faces": {
+    "east": {
+     "uv": [
+      8.0,
+      11.3,
+      11.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      4.8,
+      11.3,
+      11.2,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      8.0,
+      11.3,
+      11.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      4.8,
+      8.0,
+      11.2,
+      11.0
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      4.8,
+      8.0,
+      11.2,
+      11.0
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_3_top_puff",
+   "from": [
+    5.5,
+    4.7,
+    8.2
+   ],
+   "to": [
+    10.5,
+    5.6,
+    10.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      5.5,
+      10.4,
+      10.5,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      8.2,
+      10.4,
+      10.8,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      5.5,
+      10.4,
+      10.5,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      8.2,
+      10.4,
+      10.8,
+      11.3
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      5.5,
+      8.2,
+      10.5,
+      10.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_3_side_bulge",
+   "from": [
+    4.3,
+    0.8,
+    8.2
+   ],
+   "to": [
+    11.7,
+    3.9,
+    10.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      4.3,
+      12.1,
+      11.7,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      8.2,
+      12.1,
+      10.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      4.3,
+      12.1,
+      11.7,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      8.2,
+      12.1,
+      10.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      4.3,
+      8.2,
+      11.7,
+      10.8
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      4.3,
+      8.2,
+      11.7,
+      10.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_4_body",
+   "from": [
+    5.2,
+    0.0,
+    11.0
+   ],
+   "to": [
+    10.8,
+    4.4,
+    14.0
+   ],
+   "shade": false,
+   "faces": {
+    "east": {
+     "uv": [
+      11.0,
+      11.6,
+      14.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      5.2,
+      11.6,
+      10.8,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      11.0,
+      11.6,
+      14.0,
+      16.0
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      5.2,
+      11.0,
+      10.8,
+      14.0
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      5.2,
+      11.0,
+      10.8,
+      14.0
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_4_top_puff",
+   "from": [
+    5.8,
+    4.4,
+    11.2
+   ],
+   "to": [
+    10.2,
+    5.2,
+    13.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      5.8,
+      10.8,
+      10.2,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      11.2,
+      10.8,
+      13.8,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      5.8,
+      10.8,
+      10.2,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      11.2,
+      10.8,
+      13.8,
+      11.6
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      5.8,
+      11.2,
+      10.2,
+      13.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  },
+  {
+   "name": "ring_4_side_bulge",
+   "from": [
+    4.6,
+    0.8,
+    11.2
+   ],
+   "to": [
+    11.4,
+    3.6,
+    13.8
+   ],
+   "shade": false,
+   "faces": {
+    "north": {
+     "uv": [
+      4.6,
+      12.4,
+      11.4,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "east": {
+     "uv": [
+      11.2,
+      12.4,
+      13.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "south": {
+     "uv": [
+      4.6,
+      12.4,
+      11.4,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "west": {
+     "uv": [
+      11.2,
+      12.4,
+      13.8,
+      15.2
+     ],
+     "texture": "#dough"
+    },
+    "up": {
+     "uv": [
+      4.6,
+      11.2,
+      11.4,
+      13.8
+     ],
+     "texture": "#dough"
+    },
+    "down": {
+     "uv": [
+      4.6,
+      11.2,
+      11.4,
+      13.8
+     ],
+     "texture": "#dough"
+    }
+   }
+  }
+ ],
+ "display": {
+  "thirdperson_righthand": {
+   "rotation": [
+    75,
+    45,
+    0
+   ],
+   "translation": [
+    0,
+    2.5,
+    0
+   ],
+   "scale": [
+    0.65,
+    0.65,
+    0.65
+   ]
+  },
+  "firstperson_righthand": {
+   "rotation": [
+    0,
+    45,
+    0
+   ],
+   "translation": [
+    1.5,
+    3,
+    0
+   ],
+   "scale": [
+    0.75,
+    0.75,
+    0.75
+   ]
+  },
+  "ground": {
+   "translation": [
+    0,
+    2,
+    0
+   ],
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ]
+  },
+  "gui": {
+   "rotation": [
+    30,
+    225,
+    0
+   ],
+   "translation": [
+    0,
+    1,
+    0
+   ],
+   "scale": [
+    0.8,
+    0.8,
+    0.8
+   ]
+  },
+  "fixed": {
+   "rotation": [
+    0,
+    180,
+    0
+   ],
+   "scale": [
+    0.85,
+    0.85,
+    0.85
+   ]
+  }
+ }
+}
