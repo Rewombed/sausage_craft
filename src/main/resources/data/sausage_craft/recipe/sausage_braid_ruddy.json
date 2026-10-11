@@ -1,0 +1,10 @@
+{
+ "type": "minecraft:stonecutting",
+ "ingredient": {
+  "tag": "sausage_craft:raw_meats"
+ },
+ "result": {
+  "id": "sausage_craft:sausage_braid_ruddy",
+  "count": 1
+ }
+}

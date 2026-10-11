@@ -1,6 +1,3 @@
 {
- "parent": "minecraft:item/generated",
- "textures": {
-  "layer0": "sausage_craft:item/braided_sausage"
- }
+ "parent": "sausage_craft:block/braided_sausage"
 }

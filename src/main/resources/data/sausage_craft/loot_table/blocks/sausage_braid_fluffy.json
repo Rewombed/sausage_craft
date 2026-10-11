@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "bonus_rolls": 0,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "sausage_craft:sausage_braid_fluffy"
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:survives_explosion"
+    }
+   ]
+  }
+ ],
+ "random_sequence": "sausage_craft:blocks/sausage_braid_fluffy"
+}

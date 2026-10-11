@@ -1,5 +1,10 @@
 {
   "itemGroup.sausage_craft": "Sausage Craft",
   "block.sausage_craft.sausage_in_dough": "Classic Sausage in Dough",
-  "block.sausage_craft.braided_sausage": "Braided Sausage in Dough"
+  "block.sausage_craft.braided_sausage": "Braided Sausage in Dough",
+  "block.sausage_craft.sausage_braid_golden": "Golden Sausage Braid",
+  "block.sausage_craft.sausage_braid_ruddy": "Ruddy Sausage Braid",
+  "block.sausage_craft.sausage_braid_fluffy": "Fluffy Sausage Braid",
+  "block.sausage_craft.sausage_workstation": "Sausage Workstation",
+  "container.sausage_craft.sausage_workstation": "Sausage Workstation"
 }

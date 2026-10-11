@@ -26,3 +26,6 @@ extracted/
 # Misc
 *.log
 .ci-check/
+
+extracted_new/
+*.jar

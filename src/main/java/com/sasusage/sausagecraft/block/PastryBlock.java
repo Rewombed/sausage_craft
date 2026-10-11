@@ -28,14 +28,38 @@ public class PastryBlock extends HorizontalDirectionalBlock {
     public static final MapCodec<PastryBlock> CODEC = simpleCodec(PastryBlock::new);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    /** Low profile so the pastry hugs the surface without floating gaps. */
-    protected static final VoxelShape SHAPE = Block.box(2.0, 0.0, 1.0, 14.0, 5.5, 15.0);
+    /** Default low profile so the pastry hugs the surface without floating gaps. */
+    private static final VoxelShape DEFAULT_SHAPE = Block.box(2.0, 0.0, 1.0, 14.0, 5.5, 15.0);
+
+    /** Shapes indexed by (facing.ordinal() - 2): NORTH, SOUTH, WEST, EAST. */
+    private final VoxelShape[] shapes;
 
     public PastryBlock(Properties properties) {
+        this(properties, DEFAULT_SHAPE);
+    }
+
+    public PastryBlock(Properties properties, VoxelShape northShape) {
         super(properties);
+        this.shapes = rotatedShapes(northShape);
         registerDefaultState(stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(WATERLOGGED, Boolean.FALSE));
+    }
+
+    /** Rotates a single north-facing box shape into the four horizontal directions. */
+    private static VoxelShape[] rotatedShapes(VoxelShape north) {
+        double x1 = north.min(Direction.Axis.X);
+        double x2 = north.max(Direction.Axis.X);
+        double y1 = north.min(Direction.Axis.Y);
+        double y2 = north.max(Direction.Axis.Y);
+        double z1 = north.min(Direction.Axis.Z);
+        double z2 = north.max(Direction.Axis.Z);
+        return new VoxelShape[] {
+                Block.box(x1, y1, z1, x2, y2, z2),                  // NORTH
+                Block.box(16.0 - x2, y1, 16.0 - z2, 16.0 - x1, y2, 16.0 - z1), // SOUTH
+                Block.box(z1, y1, 16.0 - x2, z2, y2, 16.0 - x1),    // WEST
+                Block.box(16.0 - z2, y1, x1, 16.0 - z1, y2, x2)     // EAST
+        };
     }
 
     @Override
@@ -50,7 +74,7 @@ public class PastryBlock extends HorizontalDirectionalBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
+        return this.shapes[state.getValue(FACING).ordinal() - 2];
     }
 
     @Override
