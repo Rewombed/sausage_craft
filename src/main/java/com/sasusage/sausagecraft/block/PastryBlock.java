@@ -46,19 +46,29 @@ public class PastryBlock extends HorizontalDirectionalBlock {
                 .setValue(WATERLOGGED, Boolean.FALSE));
     }
 
-    /** Rotates a single north-facing box shape into the four horizontal directions. */
+    /**
+     * Rotates a single north-facing box shape into the four horizontal directions.
+     * NOTE: VoxelShape.min/max return 0..1 block coordinates, while Block.box expects
+     * 0..16 pixel coordinates - hence the * 16.0 conversion. Forgetting it produces
+     * microscopic shapes with effectively no collision.
+     */
     private static VoxelShape[] rotatedShapes(VoxelShape north) {
-        double x1 = north.min(Direction.Axis.X);
-        double x2 = north.max(Direction.Axis.X);
-        double y1 = north.min(Direction.Axis.Y);
-        double y2 = north.max(Direction.Axis.Y);
-        double z1 = north.min(Direction.Axis.Z);
-        double z2 = north.max(Direction.Axis.Z);
+        double x1 = north.min(Direction.Axis.X) * 16.0;
+        double x2 = north.max(Direction.Axis.X) * 16.0;
+        double y1 = north.min(Direction.Axis.Y) * 16.0;
+        double y2 = north.max(Direction.Axis.Y) * 16.0;
+        double z1 = north.min(Direction.Axis.Z) * 16.0;
+        double z2 = north.max(Direction.Axis.Z) * 16.0;
+
+        VoxelShape northBox = Block.box(x1, y1, z1, x2, y2, z2);
+        if (northBox.isEmpty()) {
+            northBox = DEFAULT_SHAPE;
+        }
         return new VoxelShape[] {
-                Block.box(x1, y1, z1, x2, y2, z2),                  // NORTH
+                northBox,                                                     // NORTH
                 Block.box(16.0 - x2, y1, 16.0 - z2, 16.0 - x1, y2, 16.0 - z1), // SOUTH
-                Block.box(z1, y1, 16.0 - x2, z2, y2, 16.0 - x1),    // WEST
-                Block.box(16.0 - z2, y1, x1, 16.0 - z1, y2, x2)     // EAST
+                Block.box(z1, y1, 16.0 - x2, z2, y2, 16.0 - x1),              // WEST
+                Block.box(16.0 - z2, y1, x1, 16.0 - z1, y2, x2)               // EAST
         };
     }
 
@@ -74,7 +84,21 @@ public class PastryBlock extends HorizontalDirectionalBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return this.shapes[state.getValue(FACING).ordinal() - 2];
+        return shapeFor(state);
+    }
+
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        return shapeFor(state);
+    }
+
+    private VoxelShape shapeFor(BlockState state) {
+        int index = state.getValue(FACING).ordinal() - 2;
+        if (index < 0 || index >= this.shapes.length) {
+            return DEFAULT_SHAPE;
+        }
+        VoxelShape shape = this.shapes[index];
+        return shape.isEmpty() ? DEFAULT_SHAPE : shape;
     }
 
     @Override

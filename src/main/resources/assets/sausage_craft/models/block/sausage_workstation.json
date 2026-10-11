@@ -1,9 +1,9 @@
 {
  "parent": "minecraft:block/cube_bottom_top",
  "textures": {
-  "top": "sausage_craft:block/sausage",
-  "bottom": "minecraft:block/birch_planks",
-  "side": "minecraft:block/birch_planks",
-  "particle": "sausage_craft:block/sausage"
+  "top": "sausage_craft:block/sausage_workstation_top",
+  "bottom": "sausage_craft:block/sausage_workstation_bottom",
+  "side": "sausage_craft:block/sausage_workstation_side",
+  "particle": "sausage_craft:block/sausage_workstation_side"
  }
 }
