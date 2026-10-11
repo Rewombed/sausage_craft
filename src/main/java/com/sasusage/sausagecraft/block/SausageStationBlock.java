@@ -1,5 +1,7 @@
 package com.sasusage.sausagecraft.block;
 
+import com.mojang.serialization.MapCodec;
+import com.sasusage.sausagecraft.menu.SausageStationMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -26,6 +28,11 @@ public class SausageStationBlock extends HorizontalDirectionalBlock {
     public SausageStationBlock(Properties properties) {
         super(properties);
         registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH));
+    }
+
+    @Override
+    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+        return simpleCodec(SausageStationBlock::new);
     }
 
     @Override

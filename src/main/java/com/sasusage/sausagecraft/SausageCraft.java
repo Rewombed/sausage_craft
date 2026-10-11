@@ -2,6 +2,7 @@ package com.sasusage.sausagecraft;
 
 import com.sasusage.sausagecraft.block.PastryBlock;
 import com.sasusage.sausagecraft.block.SausageStationBlock;
+import com.sasusage.sausagecraft.menu.SausageStationMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
