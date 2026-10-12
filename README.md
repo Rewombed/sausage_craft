@@ -14,6 +14,7 @@ Sausages in dough as food and table decor: *Classic*, *Braided*, three new braid
 | Золотая косичка / Golden Sausage Braid | еда + декор |
 | Румяная косичка / Ruddy Sausage Braid | еда + декор |
 | Пышная косичка / Fluffy Sausage Braid | еда + декор |
+| Сосиска в тесте «Гусеница» / Caterpillar Sausage in Dough | еда + декор (детальная модель) |
 | Сосисочный верстак / Sausage Workstation | станция крафта |
 
 - Еда: ПКМ с зажатием / eat by holding right-click.

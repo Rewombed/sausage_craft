@@ -49,6 +49,10 @@ public class SausageCraft {
             Block.box(4.3, 0.0, 0.0, 11.7, 5.6, 16.0);
     private static final VoxelShape SHAPE_BRAID_LOW =
             Block.box(0.0, 0.0, 4.1, 16.0, 1.7, 11.9);
+    // Flat caterpillar model: 11.4 x 0.7 x 6.5, authored flush with the floor.
+    // Collision keeps a 2px minimum height so the block stays easy to target.
+    private static final VoxelShape SHAPE_CATERPILLAR =
+            Block.box(2.29, 0.0, 5.03, 13.66, 2.0, 11.57);
 
     public static final DeferredBlock<PastryBlock> SAUSAGE_IN_DOUGH = BLOCKS.register("sausage_in_dough",
             () -> new PastryBlock(BlockBehaviour.Properties.of()
@@ -85,6 +89,13 @@ public class SausageCraft {
                     .sound(SoundType.WOOL)
                     .noOcclusion(), SHAPE_BRAID_LOW));
 
+    public static final DeferredBlock<PastryBlock> SAUSAGE_CATERPILLAR = BLOCKS.register("sausage_caterpillar",
+            () -> new PastryBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .strength(0.4F)
+                    .sound(SoundType.WOOL)
+                    .noOcclusion(), SHAPE_CATERPILLAR));
+
     public static final DeferredBlock<SausageStationBlock> SAUSAGE_WORKSTATION = BLOCKS.register("sausage_workstation",
             () -> new SausageStationBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.WOOD)
@@ -106,6 +117,9 @@ public class SausageCraft {
     public static final DeferredItem<BlockItem> SAUSAGE_BRAID_FLUFFY_ITEM = ITEMS.register("sausage_braid_fluffy",
             () -> new BlockItem(SAUSAGE_BRAID_FLUFFY.get(), new Item.Properties().food(SAUSAGE_FOOD)));
 
+    public static final DeferredItem<BlockItem> SAUSAGE_CATERPILLAR_ITEM = ITEMS.register("sausage_caterpillar",
+            () -> new BlockItem(SAUSAGE_CATERPILLAR.get(), new Item.Properties().food(SAUSAGE_FOOD)));
+
     public static final DeferredItem<BlockItem> SAUSAGE_WORKSTATION_ITEM = ITEMS.register("sausage_workstation",
             () -> new BlockItem(SAUSAGE_WORKSTATION.get(), new Item.Properties()));
 
@@ -122,6 +136,7 @@ public class SausageCraft {
                 output.accept(SAUSAGE_BRAID_GOLDEN_ITEM.get());
                 output.accept(SAUSAGE_BRAID_RUDDY_ITEM.get());
                 output.accept(SAUSAGE_BRAID_FLUFFY_ITEM.get());
+                output.accept(SAUSAGE_CATERPILLAR_ITEM.get());
                 output.accept(SAUSAGE_WORKSTATION_ITEM.get());
             })
             .build());
