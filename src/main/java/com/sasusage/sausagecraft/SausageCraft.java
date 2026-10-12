@@ -49,10 +49,10 @@ public class SausageCraft {
             Block.box(4.3, 0.0, 0.0, 11.7, 5.6, 16.0);
     private static final VoxelShape SHAPE_BRAID_LOW =
             Block.box(0.0, 0.0, 4.1, 16.0, 1.7, 11.9);
-    // Flat caterpillar model: 11.4 x 0.7 x 6.5, authored flush with the floor.
+    // Flat caterpillar model: 11.4 x 1.2 x 6.5, authored flush with the floor.
     // Collision keeps a 2px minimum height so the block stays easy to target.
     private static final VoxelShape SHAPE_CATERPILLAR =
-            Block.box(2.29, 0.0, 5.03, 13.66, 2.0, 11.57);
+            Block.box(2.29, 0.0, 4.03, 13.66, 2.0, 10.57);
 
     public static final DeferredBlock<PastryBlock> SAUSAGE_IN_DOUGH = BLOCKS.register("sausage_in_dough",
             () -> new PastryBlock(BlockBehaviour.Properties.of()
